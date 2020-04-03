@@ -16,7 +16,7 @@
 	"User snippet template.": {
 		"prefix": "snippet",
 		"body": [
-			"\"${1:SnippetName}\": {",
+			",\"${1:SnippetName}\": {",
 			"\t\"prefix\": \"${2:SnippetPrefix}\",",
 			"\t\"body\": [",
 			"\t\t$0",
@@ -25,5 +25,19 @@
 			"}"
 		],
 		"description": "User snippet template. Creating a new snippet in a second."
+	}
+
+	,"C++ #include snippet template.": {
+		"prefix": "inc_",
+		"body": [
+			",\"inc_${1:Header}\": {",
+			"\t\"prefix\": \"inc_${1:Header}\",",
+			"\t\"body\": [",
+			"\t\t\"#include <${1:Header}>\"",
+			"\t],",
+			"\t\"description\" : \"Quick C++ #include ${1:Header}.\"",
+			"}"
+		],
+		"description": "Creating a new C++ #include snippet in a second."
 	}
 }

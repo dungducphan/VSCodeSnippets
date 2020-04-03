@@ -12,4 +12,52 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+
+	//--------------------------------------------------------------------------------------------------
+	// ROOT Snippets
+	//--------------------------------------------------------------------------------------------------
+	"tgraph_unique_ptr": {
+		"prefix": "tgraph_unique_ptr",
+		"body": [
+			"auto ${1:objectName} = std::make_unique<TGraph>(${2:nPoints}, ${3:xArray}, ${4:yArray});"
+		],
+		"description" : "Make unique pointer for a TGraph."
+	}
+
+	//--------------------------------------------------------------------------------------------------
+	// C++ Include Snippets
+	//--------------------------------------------------------------------------------------------------
+	,"inc_memory": {
+		"prefix": "inc_memory",
+		"body": [
+			"#include <memory>"
+		],
+		"description" : "Quick C++ #include memory."
+	}
+
+	,"inc_iostream": {
+		"prefix": "inc_iostream",
+		"body": [
+			"#include <iostream>"
+		],
+		"description" : "Quick C++ #include iostream."
+	}
+
+	,"inc_fstream": {
+		"prefix": "inc_fstream",
+		"body": [
+			"#include <fstream>"
+		],
+		"description" : "Quick C++ #include fstream."
+	}
+
+	,"inc_ROOT": {
+		"prefix": "inc_ROOT",
+		"body": [
+			"#include <T${0:ROOTModule}>"
+		],
+		"description" : "Quick C++ #include ROOT module."
+	}
+
+
 }
